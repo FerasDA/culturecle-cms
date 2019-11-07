@@ -1,19 +1,15 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Community Building Impact
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Our mission is to teach culture through a monthly culinary experience.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+The evening agenda will be led by the facilitator, cultural intermediary and chef. The participants will be encouraged to ask questions to the chef and speaker to enhance their understanding and create an open dialogue.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+By hosting these events we create an authentic opportunity to interact with the chef and view the food preparation. This allows for the participants to build community by sharing stories and food with people that they might not normally interact with or even know are a part of our diverse community in Cleveland.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+We want to highlight that many cultures have a strong cultural connection to food and the time spent breaking bread with one another. Our goal is to tap in and leverage this commonality, to create a comfortable and traditional way to explore community and cultures.
+
+Since we are focusing on creating a community that values diversity, it is important to create a shared experience around food - a universally important component of culture. We want to be much more than a monthly dinner club for Clevelanders with an international palate. To begin the experience, appetizers will be shared and passed as a medium to start connecting with others (even though they may be complete strangers) from diverse backgrounds. Participants will be encouraged to share food and dine “family style” to maximize the experience and taste new foods.
