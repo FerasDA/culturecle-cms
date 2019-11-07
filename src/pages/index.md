@@ -1,21 +1,15 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Culture.CLE
+image: /img/BannerLTBlue-home.jpg
+heading: Culture.CLE
+subheading: Learn about the world in your backyard
 mainpitch:
-  title: Why Kaldi
+  title: 
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Come travel and taste another culture with us. learn about the community, culture and culinary delights of the world, without ever having to leave the 216.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Local chefs participate in the experience to promote their restaurants and appreciation for culture. We bring together Clevelanders to show them how to break bread while learning about ethnic foods and ingredients and, the how they help form a cultural identity.
 intro:
   blurbs:
     - image: /img/coffee.png
