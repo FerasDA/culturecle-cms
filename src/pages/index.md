@@ -5,7 +5,7 @@ image: /img/BannerLTBlue-home.jpg
 heading: Culture.CLE
 subheading: Learn about the world in your backyard
 mainpitch:
-  title: 
+  title: Culture CLE
   description: >
     Come travel and taste another culture with us. learn about the community, culture and culinary delights of the world, without ever having to leave the 216.
 description: >-
