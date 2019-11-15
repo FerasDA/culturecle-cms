@@ -9,6 +9,7 @@ import BlogRoll from '../components/BlogRoll'
 export const IndexPageTemplate = ({
   image,
   title,
+  title2,
   heading,
   subheading,
   mainpitch,
@@ -22,46 +23,53 @@ export const IndexPageTemplate = ({
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`,
+          backgroundPosition: `left`,
+          // backgroundAttachment: `fixed`,
         }}
       >
         <div
           style={{
             display: 'flex',
-            height: '150px',
+            height: '70px',
             lineHeight: '1',
             justifyContent: 'space-around',
             alignItems: 'left',
             flexDirection: 'column',
           }}
         >
-          <h6
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          <p
+            className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
-              // boxShadow:
-              //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-              // backgroundColor: 'rgb(255, 68, 0)',
-              color: 'white',
+              color: '#2e2e2e',
               lineHeight: '1',
               padding: '0.25em',
+              float: 'left',
+              fontFamily: 'Ubuntu, sans-serif',
+              fontSize: '16px !important',
+              marginBottom: '8px',
+              width: '100%'
             }}
           >
             {subheading}
-          </h6>
+          </p>
           <h1
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
-              // boxShadow:
-              // 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-              // backgroundColor: 'rgb(255, 68, 0)',
-              color: 'white',
+              color: '#fff',
               lineHeight: '1',
-              padding: '0.25em',
+              float: 'left',
+              fontFamily: 'Ubuntu, sans-serif',
+              fontSize: '38px',
+              margin: '5px 0 20px',
+              width: '100%'
             }}
           >
-            {title}
+            {title}<span style={{color:'#2e2e2e'}}>{title2}</span>
           </h1>
+          <p 
+          className="main-desc">
+            {mainpitch.description}<span style={{color:'#2e2e2e'}}>{mainpitch.reverseColor}</span>
+          </p>
         </div>
       </div>
       <section className="section section--gradient">
@@ -70,20 +78,9 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
+                      <p className="p-desc">{description}</p>
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
@@ -117,6 +114,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  title2: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -134,6 +132,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        title2={frontmatter.title2}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -159,6 +158,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        title2
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -169,7 +169,7 @@ export const pageQuery = graphql`
         heading
         subheading
         mainpitch {
-          title
+          reverseColor
           description
         }
         description

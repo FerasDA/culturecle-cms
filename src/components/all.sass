@@ -2,16 +2,23 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: #a2c7e2
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #2e2e2e
+
+.navbar
+  background-color: #415364 !important
 
 .navbar .navbar-menu
   box-shadow:none !important
+  background: #415364
+  float: left;
+  min-height: 124px;
+  width: 100%;
 
 .content .taglist
   list-style: none
@@ -31,7 +38,7 @@ $black: #2b2523
 // Helper Classes
 .full-width-image-container
   width: 100vw
-  height: 400px
+  height: 500px
   position: relative
   left: 50%
   right: 50%
@@ -44,12 +51,25 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 500px
     background-size: cover
     background-position: bottom
     display: flex
-    justify-content: center
+    justify-content: left
     align-items: center
+    padding-left: 50px
+
+.main-desc
+    color: #fff;
+    float: left;
+    font-family: Ubuntu,sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 25px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    width: 70%;
 
 .btn
     display: inline-block
@@ -57,19 +77,30 @@ $black: #2b2523
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: #a2c7e2
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #a2c7e2
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px #2e2e2e
+    box-shadow: inset 0 0 0 2px #fff
     -webkit-transition: all .15s ease
     transition: all .15s ease
+    color: #fff
 
 .margin-top-0
   margin-top: 0 !important
+
+.navbar-item
+  color: #fff !important
+  font-size: 16px
+  font-family: Ubuntu,sans-serif;
+  font-weight: 600
+  letter-spacing: .3px
+
+a.navbar-item:hover
+  background-color: $kaldi-red !important
 
 .navbar-item .icon
   color: $primary
@@ -82,7 +113,14 @@ $black: #2b2523
   padding: 0 1rem
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  background-color: $black
+
+.p-desc
+    font-family: Ubuntu,sans-serif !important
+    color: #666 !important
+    line-height: 26px !important
+    font-size: 25px !important
+    letter-spacing: .4px !important
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -114,7 +152,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #a2c7e2;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
